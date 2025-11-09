@@ -5,7 +5,12 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  font-size: 1.5rem;
+  width: 8rem;
+
 }
+
+
 
 a {
   color: #0077cc;
@@ -21,6 +26,11 @@ a {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.nav-item {
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
 
 .border-top {
