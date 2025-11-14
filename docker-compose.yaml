@@ -1,0 +1,29 @@
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: blazor_app_container
+    restart: always
+    networks:
+      - app-network
+    expose:
+      - 8080
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx_reverse_proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app
+    restart: always
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

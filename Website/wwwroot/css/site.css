@@ -29,7 +29,6 @@ body {
 
 .navbar-container {
   background-color: var(--primary-color);
-  border-bottom: 3px var(--contrast-color-hover) solid;
 }
 
 .nav-item-container {
@@ -54,9 +53,8 @@ ul {
   transition: color 0.2s ease-in-out;
 }
 
-.nav-item a:hover, 
-.nav-item a:active {
-  color: var(--contrast-color-hover)
+.nav-item a:hover {
+  color: var(--contrast-color)
 }
 
 .footer {
@@ -82,6 +80,7 @@ ul {
 
 #Header-Home {
   text-align: center;
+  color: var(--contrast-color);
 }
 
 
@@ -93,15 +92,17 @@ ul {
 
 #Header-Portfolio {
   text-align: center;
+  color: var(--contrast-color);
 }
 
 /* --About me-- */
 #Body-About {
-  
+
 }
 
 #Header-About {
   text-align: center;
+  color: var(--contrast-color);
 }
 
 #Poem-About {
